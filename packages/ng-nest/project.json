@@ -1,0 +1,84 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/ng-nest/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/ng-nest",
+        "main": "packages/ng-nest/src/index.ts",
+        "tsConfig": "packages/ng-nest/tsconfig.lib.json",
+        "assets": [
+          "packages/ng-nest/*.md",
+          {
+            "input": "./packages/ng-nest/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/ng-nest/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/ng-nest",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/ng-nest",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/ng-nest/**/*.ts",
+          "packages/ng-nest/generators.json",
+          "packages/ng-nest/executors.json",
+          "packages/ng-nest/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/ng-nest"],
+      "options": {
+        "jestConfig": "packages/ng-nest/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "push": true,
+        "noVerify": true,
+        "baseBranch": "master",
+        "preset": "conventional",
+        "tagPrefix": "${projectName}@",
+        "postTargets": ["ng-nest:github", "ng-nest:publish"]
+      }
+    },
+    "github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
+      }
+    },
+    "publish": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    }
+  },
+  "tags": []
+}

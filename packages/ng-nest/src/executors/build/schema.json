@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "title": "Build executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "browserTarget": {
+      "type": "string",
+      "description": "Browser target to be run. Usually the Angular app."
+    },
+    "ssrTarget": {
+      "type": "string",
+      "description": "Server side rendering target to be run. Usually the Angular Universal target"
+    },
+    "serveTarget": {
+      "type": "string",
+      "description": "Server target to be run. Usually the NestJS app."
+    },
+    "host": {
+      "type": "string",
+      "description": "Host to publish the application auto reloaded by browser sync"
+    },
+    "openBrowser": {
+      "type": "boolean",
+      "description": "True if a browser tab should be opened upon app startup"
+    },
+    "ssl": {
+      "type": "boolean",
+      "description": "Serve using HTTPS.",
+      "default": false
+    },
+    "sslKey": {
+      "type": "string",
+      "description": "SSL key to use for serving HTTPS."
+    },
+    "sslCert": {
+      "type": "string",
+      "description": "SSL certificate to use for serving HTTPS."
+    },
+    "proxyConfig": {
+      "type": "string",
+      "description": "Proxy configuration file."
+    },
+    "browsers": {
+      "type": "array",
+      "description": "Specify which browsers to open. (Google Chrome, Firefox, Safari)"
+    },
+    "serverAutoSync": {
+      "type": "boolean",
+      "description": "If the server app takes too long to bootstrap disable auto sync and trigger reload manually."
+    },
+    "disableBrowserSync": {
+      "type": "boolean",
+      "description": "Disable browser sync entirely."
+    }
+  },
+  "required": ["uiTarget", "ssrTarget", "serveTarget"]
+}
