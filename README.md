@@ -35,9 +35,11 @@ yarn add @nxarch/ng-nest
 ### Setup
 
 Use the provided generator to setup all files.
+If you don't have an Angular and a NestJS app refer to [this](#setup_nx_apps) part on how to generate these
+applications.
 
 ```
-yarn nx generate @nxarch/ng-nest:init --ssrApp=<Angular Project> --serverApp=<NestJS Project>
+yarn nx generate @nxarch/ng-nest:init --ssrApp=my-angular-project --serverApp=my-nestjs-project
 ```
 
 ### App Start
@@ -45,7 +47,19 @@ yarn nx generate @nxarch/ng-nest:init --ssrApp=<Angular Project> --serverApp=<Ne
 Use the added target in the server configuration file.
 
 ```
-yarn nx run <NestJS Project>:serve-ssr
+yarn nx run my-nestjs-project:serve-ssr
+```
+
+<!----><a name="setup_nx_apps"></a>
+
+### Setup Nx apps (if not already setup)
+
+Setup an Angular and a NestJS app
+
+```
+yarn add --dev @nrwl/angular @nrwl/nest
+yarn nx generate @nrwl/angular:app
+yarn nx generate @nrwl/nest:app
 ```
 
 ### Configuration
