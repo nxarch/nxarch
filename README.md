@@ -53,7 +53,7 @@ yarn nx run my-nestjs-project:serve-ssr
 
 ### Setup Nx apps (if not already setup)
 
-Setup an Angular and a NestJS app
+Setup an Angular app and a NestJS app
 
 ```
 yarn add --dev @nrwl/angular @nrwl/nest
