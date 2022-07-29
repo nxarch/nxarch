@@ -1,5 +1,5 @@
 <p align="center">
- <img width="25%" height="25%" src="nxarch.png">
+ <img width="40%" height="40%" src="nxarch.png">
 </p>
 
 # NxArch
