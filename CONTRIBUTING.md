@@ -47,7 +47,7 @@ a [closing reference to an issue](https://help.github.com/articles/closing-issue
 Samples: (even more [samples](https://github.com/angular/angular/commits/main))
 
 ```
-docs(decorators): update changelog to include a description of the log decorator 
+docs(decorators): update changelog to include a description of the log decorator
 ```
 
 ```
