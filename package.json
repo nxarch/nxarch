@@ -13,7 +13,8 @@
     "format": "nx format:write --all",
     "lint:affected": "nx affected:lint --base origin/develop",
     "test:affected": "nx affected:test --base origin/develop",
-    "build:affected": "nx affected:build --base origin/develop"
+    "build:affected": "nx affected:build --base origin/develop",
+    "c": "git-cz"
   },
   "private": true,
   "devDependencies": {
@@ -42,6 +43,7 @@
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-import": "^2.26.0",
+    "git-cz": "^4.9.0",
     "husky": "^8.0.1",
     "jest": "27.5.1",
     "jsonc-eslint-parser": "^2.1.0",
@@ -66,5 +68,10 @@
   },
   "lint-staged": {
     "*.{ts,json,html,tsx,js}": "yarn format"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
   }
 }
