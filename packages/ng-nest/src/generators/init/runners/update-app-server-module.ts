@@ -42,7 +42,7 @@ export async function updateAppServerModule(tree: Tree, options: InitGeneratorSc
 
   appModule.addImportDeclaration({
     namedImports: ['AngularUniversalModule'],
-    moduleSpecifier: '@ynnck/ng-universal',
+    moduleSpecifier: '@nxarch/nest-nguniversal',
   });
 
   appModule.addImportDeclaration({

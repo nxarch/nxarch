@@ -10,7 +10,7 @@ export function addDependencies(tree: Tree) {
       'reflect-metadata': '^0.1.13',
       'class-transformer': '^0.4.0',
       'class-validator': '^0.13.1',
-      '@ynnck/ng-universal': '^6.0.0',
+      '@nxarch/nest-nguniversal': '^0.0.0',
       '@nguniversal/express-engine': '^14.0.0',
     },
     {}
