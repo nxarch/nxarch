@@ -31,6 +31,16 @@
             "input": "./packages/ng-nest",
             "glob": "executors.json",
             "output": "."
+          },
+          {
+            "glob": "nxarch.png",
+            "input": ".",
+            "output": "."
+          },
+          {
+            "glob": "LICENSE",
+            "input": ".",
+            "output": "."
           }
         ]
       }
