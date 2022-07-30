@@ -1,6 +1,6 @@
 {
   "name": "@nxarch/ng-nest",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Nx Plugin to simplify and improve NestJS and Angular Universal integration and development.",
   "main": "src/index.js",
   "generators": "./generators.json",

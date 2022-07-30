@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.1.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.1.1...ng-nest@0.1.2) (2022-07-30)
+
+
+### Bug Fixes
+
+* **ng-nest:** fix dependencies and rename uiTarget to browserTarget ([477740f](https://github.com/nxarch/nxarch/commit/477740f3d5b914b0db39e60c596c7276206a50e9))
+
 ### [0.1.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.1.0...ng-nest@0.1.1) (2022-07-30)
 
 
