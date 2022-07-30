@@ -20,7 +20,7 @@ export async function updateServerConfig(tree: Tree, options: InitGeneratorSchem
   appServerProjectConfig.targets['serve-ssr'] = {
     executor: '@nxarch/ng-nest:build',
     options: {
-      uiTarget: `${options.ssrApp}:build`,
+      browserTarget: `${options.ssrApp}:build`,
       ssrTarget: `${options.ssrApp}:ssr`,
       serveTarget: `${options.serverApp}:serve`,
     },

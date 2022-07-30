@@ -5,7 +5,7 @@ import waitOn from 'wait-on';
 import { initBrowserSync } from './init-browser-sync';
 import { BSOptions, NodeNgSsrExecutorOptions } from './schema';
 
-let uiTargetOptions: Record<PropertyKey, unknown>;
+let browserTargetOptions: Record<PropertyKey, unknown>;
 let ssrTargetOptions: Record<PropertyKey, unknown>;
 let serveTargetOptions: Record<PropertyKey, unknown>;
 let serverTargetOptions: Record<PropertyKey, unknown>;
@@ -13,15 +13,15 @@ let serverTargetOptions: Record<PropertyKey, unknown>;
 export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
   const watchPaths = [];
   const watchFiles = [];
-  uiTargetOptions = getTargetOptions(options.browserTarget, context);
+  browserTargetOptions = getTargetOptions(options.browserTarget, context);
   ssrTargetOptions = getTargetOptions(options.ssrTarget, context);
   serveTargetOptions = getTargetOptions(options.serveTarget, context);
   serverTargetOptions = getTargetOptions(serveTargetOptions.buildTarget, context);
 
-  watchPaths.push(uiTargetOptions.outputPath, ssrTargetOptions.outputPath, serverTargetOptions.outputPath);
+  watchPaths.push(browserTargetOptions.outputPath, ssrTargetOptions.outputPath, serverTargetOptions.outputPath);
   watchFiles.push(
-    uiTargetOptions.outputPath + '/main.js',
-    uiTargetOptions.outputPath + '/styles.css',
+    browserTargetOptions.outputPath + '/main.js',
+    browserTargetOptions.outputPath + '/styles.css',
     ssrTargetOptions.outputPath + '/main.js',
     serverTargetOptions.outputPath + '/main.js'
   );
@@ -35,8 +35,8 @@ async function startBrowserSync(watchPaths: string[], watchFiles: string[], opti
   if (!options.serverAutoSync) {
     process.env.BS_TRIGGER_FILE = serverTargetOptions.outputPath + '/.bs-sync-trigger';
     watchFiles = [
-      uiTargetOptions.outputPath + '/main.js',
-      uiTargetOptions.outputPath + '/styles.css',
+      browserTargetOptions.outputPath + '/main.js',
+      browserTargetOptions.outputPath + '/styles.css',
       ssrTargetOptions.outputPath + '/main.js',
       process.env.BS_TRIGGER_FILE,
     ];
