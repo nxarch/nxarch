@@ -67,7 +67,7 @@
     "typescript": "~4.7.2"
   },
   "lint-staged": {
-    "*.{ts,json,html,tsx,js}": "yarn format"
+    "*.{ts,json,html,tsx,js,md}": "yarn format"
   },
   "config": {
     "commitizen": {
