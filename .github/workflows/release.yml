@@ -26,16 +26,16 @@ jobs:
           node-version: ${{ inputs.node_version }}
           registry-url: https://registry.npmjs.org
 
-      - name: yarn install
-        shell: bash
-        run: yarn install --immutable --immutable-cache
-
       - name: Merge develop -> master
         uses: ./.github/actions/merge
         with:
           baseBranch: master
           fromBranch: develop
           push: false
+
+      - name: yarn install
+        shell: bash
+        run: yarn install --immutable --immutable-cache
 
       - name: Bump new version and update changelog
         env:
