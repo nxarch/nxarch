@@ -44,10 +44,11 @@ async function startBrowserSync(watchPaths: string[], watchFiles: string[], opti
 
   chokidar.watch(watchPaths).on('all', (event, path, stats) => {
     if (watchFiles.includes(path)) {
-      console.log('--------');
-      console.log(event);
-      console.log(path);
-      console.log('--------');
+      // todo add debug flag
+      // console.log('--------');
+      // console.log(event);
+      // console.log(path);
+      // console.log('--------');
       bsInstance.reload();
     }
   });
