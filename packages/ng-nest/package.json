@@ -1,7 +1,38 @@
 {
   "name": "@nxarch/ng-nest",
   "version": "0.1.0",
+  "description": "A Nx Plugin to simplify and improve NestJS and Angular Universal integration and development.",
   "main": "src/index.js",
   "generators": "./generators.json",
-  "executors": "./executors.json"
+  "executors": "./executors.json",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/nxarch/nxarch/issues"
+  },
+  "homepage": "https://github.com/nxarch/nxarch#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxarch/nxarch"
+  },
+  "keywords": [
+    "Nx Plugin",
+    "Nx",
+    "Monorepo",
+    "NestJS",
+    "Angular",
+    "server side rendering",
+    "Angular Universal"
+  ],
+  "author": {
+    "name": "Yannick Boetzkes",
+    "email": "code@yannickboetzkes.com",
+    "url": "https://yannickboetzkes.com"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "typescript": ">= 4.1.2"
+  }
 }
