@@ -23,6 +23,7 @@ an executor for a good DX.
 ## Prerequisites
 
 You need a NestJS application and a Angular application in the same workspace.
+Nx Version >= 14
 
 ## Installation
 
