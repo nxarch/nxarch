@@ -30,6 +30,7 @@
     "email": "code@yannickboetzkes.com",
     "url": "https://yannickboetzkes.com"
   },
+  "sideEffects": false,
   "license": "MIT",
   "dependencies": {
     "@nguniversal/builders": "^14.0.3",
