@@ -68,6 +68,7 @@
         "baseBranch": "master",
         "preset": "conventional",
         "tagPrefix": "${projectName}@",
+        "commitMessageFormat": "release: bump ${projectName} to ${version}",
         "postTargets": ["ng-nest:github", "ng-nest:publish"]
       }
     },

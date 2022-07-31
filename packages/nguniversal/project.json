@@ -41,6 +41,7 @@
         "baseBranch": "master",
         "preset": "conventional",
         "tagPrefix": "${projectName}@",
+        "commitMessageFormat": "release: bump ${projectName} to ${version}",
         "postTargets": ["nguniversal:github", "nguniversal:publish"]
       }
     },
