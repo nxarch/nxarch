@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.1.0...nguniversal@0.2.0) (2022-07-31)
+
+
+### Features
+
+* **general:** add workflow for specific release ([6fa706d](https://github.com/nxarch/nxarch/commit/6fa706d1a0a6735b651dd07defbc3c2ee26ebcc5))
+
 ## 0.1.0 (2022-07-31)
 
 
