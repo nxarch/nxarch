@@ -6,7 +6,7 @@
 
 From a conceptual view the NestJS server incorporates an Angular Universal application that will be reached on specified
 routes.<br>
-The server uses the AngularUniversalModule provided by [`@nxarch/ng-universal`](https://github.com/nxarch/ng-universal).
+The server uses the AngularUniversalModule provided by [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
 The setup for both application can be tedious and error-prone. This library takes care of the entire setup and provides
 an executor for a good DX.
 
