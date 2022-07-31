@@ -63,7 +63,7 @@ yarn nx generate @nrwl/nest:app
 
 ### Configuration
 
-For configuring the AngularUniversalModule refer to [`@nxarch/ng-universal`](https://github.com/nxarch/ng-universal)
+For configuring the AngularUniversalModule refer to [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
 .
 
 ### Notice
