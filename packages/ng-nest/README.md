@@ -1,5 +1,5 @@
 <p align="center">
- <img width="40%" height="40%" src="/nxarch.png">
+ <img width="40%" height="40%" src="https://raw.githubusercontent.com/nxarch/ng-nest/master/assets/nxarch.png">
 </p>
 
 > A Nx plugin to integrate a NestJS server with a server side rendered Angular application.
