@@ -2,7 +2,8 @@ name: Release Version
 
 on:
   workflow_dispatch:
-    branches: master
+#    branches:
+#      - master
     inputs:
       level:
         type: choice
@@ -11,7 +12,6 @@ on:
         options:
           - minor
           - patch
-
       project:
         type: choice
         required: true
