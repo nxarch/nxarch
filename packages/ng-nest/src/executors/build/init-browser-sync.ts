@@ -1,4 +1,5 @@
 import * as browserSync from 'browser-sync';
+import chalk from 'chalk';
 import { logger } from 'nx/src/utils/logger';
 import { workspaceRoot } from 'nx/src/utils/workspace-root';
 import { BSOptions } from './schema';
@@ -12,7 +13,13 @@ export async function initBrowserSync(
   if (browserSyncInstance.active) return browserSyncInstance;
 
   const bsPort = options.port;
-  logger.log('Server available on', `http://localhost:${bsPort}`);
+  logger.info(`
+  ${chalk.inverse(chalk.bold(chalk.green(' NG-NEST ')))}
+  ------------------------------------------------------
+  🚀🚀🚀 Server available on ${options.ssl ? 'https' : 'http'}://localhost:${bsPort}
+  Ready for live refresh
+  ------------------------------------------------------
+  `);
 
   const bsOptions: browserSync.Options = {
     proxy: {

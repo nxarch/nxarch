@@ -7,6 +7,7 @@ import { updateAppServerModule } from './runners/update-app-server-module';
 import { updateAppSsrModule } from './runners/update-app-ssr-module';
 import { updateBrowserMain } from './runners/update-browser-main';
 import { updateNgConfig } from './runners/update-ng-config';
+import { updatePackageJson } from './runners/update-package-json';
 import { updateServerConfig } from './runners/update-server-config';
 import { updateSsrMain } from './runners/update-ssr-main';
 import { InitGeneratorSchema } from './schema';
@@ -16,6 +17,7 @@ export default async function (tree: Tree, options: InitGeneratorSchema) {
   await updateNgConfig(tree, options);
   await updateServerConfig(tree, options);
   await addDependencies(tree);
+  await updatePackageJson(tree, options);
 
   return async () => {
     installPackagesTask(tree);

@@ -3,11 +3,15 @@ import { InitGeneratorSchema } from '../schema';
 
 export async function updateNgConfig(tree: Tree, options: InitGeneratorSchema) {
   const appSsrProjectConfig = readProjectConfiguration(tree, options.ssrApp);
-  const { server, ...targets } = appSsrProjectConfig.targets;
-  const ssrConfig = server;
-  const buildConfig = targets.build;
+  const { server: ssrConfig, ...targets } = appSsrProjectConfig.targets;
   ssrConfig.options.tsConfig = ssrConfig.options.tsConfig.replace('tsconfig.server.json', 'tsconfig.ssr.json');
   ssrConfig.options.outputPath = `dist/apps/${options.ssrApp}/ssr`;
+  ssrConfig.options.outputHashing = 'none';
+  ssrConfig.options.optimization = false;
+
+  delete ssrConfig.configurations.development.optimization;
+
+  const buildConfig = targets.build;
   buildConfig.options.outputPath = `dist/apps/${options.ssrApp}/browser`;
 
   updateProjectConfiguration(tree, options.ssrApp, {

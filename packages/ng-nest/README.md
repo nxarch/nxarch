@@ -45,10 +45,10 @@ yarn nx generate @nxarch/ng-nest:init --ssrApp=my-angular-project --serverApp=my
 
 ### App Start
 
-Use the added target in the server configuration file.
+Use the added script in the package.json.
 
 ```
-yarn nx run my-nestjs-project:serve-ssr
+yarn dev:server
 ```
 
 ### Setup Nx apps (if not already setup)
@@ -65,3 +65,14 @@ yarn nx generate @nrwl/nest:app
 
 For configuring the AngularUniversalModule refer to [`@nxarch/ng-universal`](https://github.com/nxarch/ng-universal)
 .
+
+### Notice
+
+When using Angulars http client make sure to set a proper url.
+
+```ts
+// don't
+hello$ = this.http.get<Message>('/api/hello');
+// do
+hello$ = this.http.get<Message>('http://localhost:4200/api/hello');
+```

@@ -8,6 +8,9 @@ export async function updateServerConfig(tree: Tree, options: InitGeneratorSchem
 
   buildConfig.options.externalDependencies = [
     ...(buildConfig.options.externalDependencies || []),
+    '@nestjs/common',
+    '@nestjs/core',
+    'express',
     '@nestjs/microservices',
     '@nestjs/microservices/microservices-module',
     '@nestjs/websockets',
@@ -15,17 +18,19 @@ export async function updateServerConfig(tree: Tree, options: InitGeneratorSchem
     'cache-manager',
   ];
   buildConfig.options.optimization = false;
-  buildConfig.options.sourceMap = true;
+
+  buildConfig.configurations.development = {
+    sourceMap: true,
+  };
+
+  delete buildConfig.configurations.production.optimization;
 
   appServerProjectConfig.targets['serve-ssr'] = {
     executor: '@nxarch/ng-nest:build',
     options: {
-      browserTarget: `${options.ssrApp}:build`,
-      ssrTarget: `${options.ssrApp}:ssr`,
-      serveTarget: `${options.serverApp}:serve`,
-    },
-    configurations: {
-      production: {},
+      browserTarget: `${options.ssrApp}:build:development`,
+      ssrTarget: `${options.ssrApp}:ssr:development`,
+      serveTarget: `${options.serverApp}:serve:development`,
     },
   };
 
