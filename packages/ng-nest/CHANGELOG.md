@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.2.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.2.1...ng-nest@0.2.2) (2022-07-31)
+
+
+### Bug Fixes
+
+* **general:** update logo path ([3b5ae3a](https://github.com/nxarch/nxarch/commit/3b5ae3a947155e713e09a5d0fbd4937615473d1f))
+
 ### [0.2.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.2.0...ng-nest@0.2.1) (2022-07-31)
 
 ## [0.2.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.1.2...ng-nest@0.2.0) (2022-07-31)
