@@ -2,6 +2,7 @@ name: Release Version
 
 on:
   workflow_dispatch:
+    branches: master
     inputs:
       level:
         type: choice

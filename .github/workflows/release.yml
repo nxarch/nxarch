@@ -1,7 +1,8 @@
 name: Release
 
 on:
-  - workflow_dispatch
+  workflow_dispatch:
+    branches: master
 
 jobs:
   release:
@@ -9,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node_version: [14]
+        node_version: [ 14 ]
 
     steps:
       - uses: actions/checkout@v3
