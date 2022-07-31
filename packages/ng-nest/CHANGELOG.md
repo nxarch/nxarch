@@ -7,6 +7,20 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 ### Features
 
+* **general:** add workflow for specific release ([6fa706d](https://github.com/nxarch/nxarch/commit/6fa706d1a0a6735b651dd07defbc3c2ee26ebcc5))
+* **ng-nest:** update dependency ([f7e341b](https://github.com/nxarch/nxarch/commit/f7e341bcdc9f2c526035bf48a7ba51e0dc529d2f))
+* **nguniversal:** initialize package ([78c03e3](https://github.com/nxarch/nxarch/commit/78c03e3c2087ccacf10b85c0a21501a479484a7c))
+
+
+### Bug Fixes
+
+* **ng-nest:** remove console log ([c1f21b0](https://github.com/nxarch/nxarch/commit/c1f21b02abff34a8f905693daec6ed059359179b))
+
+## [0.3.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.2.3...ng-nest@0.3.0) (2022-07-31)
+
+
+### Features
+
 * **ng-nest:** update dependency ([f7e341b](https://github.com/nxarch/nxarch/commit/f7e341bcdc9f2c526035bf48a7ba51e0dc529d2f))
 * **nguniversal:** initialize package ([78c03e3](https://github.com/nxarch/nxarch/commit/78c03e3c2087ccacf10b85c0a21501a479484a7c))
 
