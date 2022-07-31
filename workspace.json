@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "ng-nest": "packages/ng-nest",
-    "ng-nest-e2e": "e2e/ng-nest-e2e"
+    "ng-nest-e2e": "e2e/ng-nest-e2e",
+    "nguniversal": "packages/nguniversal"
   }
 }

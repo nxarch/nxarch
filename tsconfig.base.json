@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nxarch/ng-nest": ["packages/ng-nest/src/index.ts"]
+      "@nxarch/ng-nest": ["packages/ng-nest/src/index.ts"],
+      "@nxarch/nguniversal": ["packages/nguniversal/src/index.ts"]
     },
     "esModuleInterop": true
   },

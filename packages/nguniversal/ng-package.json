@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/packages/nguniversal",
+  "lib": {
+    "entryFile": "src/index.ts"
+  },
+  "assets": [
+    "packages/nguniversal/*.md",
+    {
+      "glob": "LICENSE",
+      "input": ".",
+      "output": "."
+    }
+  ]
+}
