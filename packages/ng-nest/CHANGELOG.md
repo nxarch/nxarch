@@ -2,6 +2,18 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.1.2...ng-nest@0.2.0) (2022-07-31)
+
+
+### Features
+
+* **ng-nest:** add dependencies and update package json on setup ([cfb3964](https://github.com/nxarch/nxarch/commit/cfb3964ced2fac665f47df277bcebd59efb5189f))
+
+
+### Bug Fixes
+
+* **ng-nest:** add side effects flag ([e28dee7](https://github.com/nxarch/nxarch/commit/e28dee72e9c3419aba37b5dbfb5fcb029740402b))
+
 ### [0.1.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.1.1...ng-nest@0.1.2) (2022-07-30)
 
 
