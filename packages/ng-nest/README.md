@@ -6,7 +6,8 @@
 
 From a conceptual view the NestJS server incorporates an Angular Universal application that will be reached on specified
 routes.<br>
-The server uses the AngularUniversalModule provided by [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
+The server uses the AngularUniversalModule provided
+by [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
 The setup for both application can be tedious and error-prone. This library takes care of the entire setup and provides
 an executor for a good DX.
 
@@ -32,7 +33,7 @@ npm i @nxarch/ng-nest
 yarn add @nxarch/ng-nest
 ```
 
-### Setup
+## Setup
 
 Use the provided generator to setup all files.
 If you don't have an Angular and a NestJS app refer to [this](#setup-nx-apps-if-not-already-setup) part on how to
@@ -43,7 +44,7 @@ applications.
 yarn nx generate @nxarch/ng-nest:init --ssrApp=my-angular-project --serverApp=my-nestjs-project
 ```
 
-### App Start
+## App Start
 
 Use the added script in the package.json.
 
@@ -63,7 +64,8 @@ yarn nx generate @nrwl/nest:app
 
 ### Configuration
 
-For configuring the AngularUniversalModule refer to [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
+For configuring the AngularUniversalModule refer
+to [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
 .
 
 ### Notice
