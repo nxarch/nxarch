@@ -2,6 +2,14 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.2.3](https://github.com/nxarch/nxarch/compare/ng-nest@0.2.2...ng-nest@0.2.3) (2022-07-31)
+
+
+### Bug Fixes
+
+* **ng-nest:** update pacakge path ([e4f086b](https://github.com/nxarch/nxarch/commit/e4f086be286dec60eb7593524d58fa2411af8ad4))
+* **ng-nest:** update pacakge path ([480db31](https://github.com/nxarch/nxarch/commit/480db316b44a31bef1ffb4eb68b53c17808b0d73))
+
 ### [0.2.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.2.1...ng-nest@0.2.2) (2022-07-31)
 
 
