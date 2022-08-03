@@ -4,11 +4,12 @@
 
 > A Nx plugin to integrate a NestJS server with a server side rendered Angular application.
 
-From a conceptual view the NestJS server incorporates an Angular Universal application that will be reached on specified
+From a conceptual point of view the NestJS server incorporates an Angular Universal application that will be reached on
+specified
 routes.<br>
 The server uses the AngularUniversalModule provided
 by [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
-The setup for both application can be tedious and error-prone. This library takes care of the entire setup and provides
+The setup for both applications can be tedious and error-prone. This library takes care of the entire setup and provides
 an executor for a good DX.
 
 <p align="center">
@@ -23,7 +24,7 @@ an executor for a good DX.
 
 ## Prerequisites
 
-You need a NestJS application and a Angular application in the same workspace.
+You need a NestJS application and an Angular application in the same [workspace](#setup-nx-apps-if-not-already-setup).
 Nx Version >= 14.0.0
 
 ## Installation
@@ -54,7 +55,7 @@ yarn dev:server
 
 ### Setup Nx apps (if not already setup)
 
-Setup an Angular app and a NestJS app
+Setup an Angular app and a NestJS app in an existing Nx workspace.
 
 ```
 yarn add --dev @nrwl/angular @nrwl/nest
@@ -66,7 +67,6 @@ yarn nx generate @nrwl/nest:app
 
 For configuring the AngularUniversalModule refer
 to [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
-.
 
 ### Notice
 

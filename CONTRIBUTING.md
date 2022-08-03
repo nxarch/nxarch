@@ -22,7 +22,7 @@ Just remember a few guidelines while working on the project in order to make col
 
 We use semantic versioning and conventional commits to ensure universal/consistent versioning and a readable git
 history.
-Structured commit message are important to generate our changelog as well.
+Structured commit messages are important to generate our changelog as well.
 
 ### Commit Message Format
 
