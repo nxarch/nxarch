@@ -2,7 +2,8 @@ name: Release Version
 
 on:
   workflow_dispatch:
-    branches: master
+    branches:
+      - master
     inputs:
       level:
         type: choice
@@ -11,7 +12,6 @@ on:
         options:
           - minor
           - patch
-
       project:
         type: choice
         required: true
@@ -26,7 +26,7 @@ jobs:
 
     strategy:
       matrix:
-        node_version: [14]
+        node_version: [ 14 ]
 
     steps:
       - uses: actions/checkout@v3
@@ -59,14 +59,14 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
-        run: npx nx version ${github.event.inputs.project} --releaseAs=${github.event.inputs.level} --dryRun
+        run: npx nx version ${{github.event.inputs.project}} --releaseAs=${{github.event.inputs.level}} --dryRun
 
       - name: Bump new version and update changelog
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
-        run: npx nx version ${github.event.inputs.project} --releaseAs=${github.event.inputs.level}
+        run: npx nx version ${{github.event.inputs.project}} --releaseAs=${{github.event.inputs.level}}
 
       - name: Back-merge master -> develop
         uses: ./.github/actions/merge
