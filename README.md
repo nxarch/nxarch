@@ -4,7 +4,7 @@
 
 # NxArch
 
-> A Nx Plugin library to improve and simplify Architecture.
+> A Nx Plugin library to improve and simplify App Architecture and Repository Setup.
 
 <p align="center">
 <a href="https://github.com/nxarch/nxarch/actions/workflows/ci.yml">
