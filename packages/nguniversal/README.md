@@ -1,6 +1,4 @@
-<p align="center">
- <img width="40%" height="40%" src="https://raw.githubusercontent.com/nxarch/nxarch/master/assets/nxarch.png">
-</p>
+<p align="center"><img width="40%" height="40%" src="https://raw.githubusercontent.com/nxarch/nxarch/master/assets/nxarch.png"></p>
 
 > This library provides useful Modules and Utilities to simplify and enhance efficiency working with Angular Universal
 
@@ -25,9 +23,7 @@ npm i @nxarch/nguniversal
 yarn add @nxarch/nguniversal
 ```
 
-## Utilities
-
-### TransferStateService
+## TransferStateService
 
 This utility service simplifies working with Angular Universals Transfer State. The service will determine if the
 provided callback function should be executed based on the existence of the key.
@@ -38,7 +34,7 @@ provided callback function should be executed based on the existence of the key.
 - on the client the transferStateService can determine if the value is already present or not based on the key
 - once a value is read the key value pair will be removed from the transfer state
 
-#### Setup
+### Setup
 
 ```ts
 // browser.module.ts
@@ -61,7 +57,7 @@ export class AppBrowserModule {}
 export class AppSsrModule {}
 ```
 
-#### Usage
+### Usage
 
 The http call will be made on the server and send to the client with the html.
 
@@ -75,20 +71,26 @@ export class AppComponent {
     this.http.get<string>('http://localhost:4200/api/hello')
   );
 
-  constructor(private readonly transferStateService: TransferStateService, private http: HttpClient) {}
+  constructor(
+    private readonly transferStateService: TransferStateService,
+    private http: HttpClient
+  ) {}
 }
 ```
 
-### Environment Tokens
+## Environment Tokens
 
-#### Usage
+### Usage
 
 In terms of environment there are only two states. The statements are run on the server (IS_SERVER) or on the client
 (IS_BROWSER).
 
 ```ts
 export class AppComponent implements OnInit {
-  constructor(@Inject(IS_SERVER) private isServer: boolean, @Inject(IS_BROWSER) private isBrowser: boolean) {}
+  constructor(
+    @Inject(IS_SERVER) private isServer: boolean,
+    @Inject(IS_BROWSER) private isBrowser: boolean
+  ) {}
 
   ngOnInit() {
     if (this.isServer) {
