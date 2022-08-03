@@ -34,6 +34,7 @@ within a Nx workspace.
 ## Packages
 
 - [`@nxarch/ng-nest`](https://github.com/nxarch/nxarch/blob/master/packages/ng-nest)
+- [`@nxarch/nguniversal`](https://github.com/nxarch/nxarch/blob/master/packages/nguniversal)
 
 ### Contributing
 
