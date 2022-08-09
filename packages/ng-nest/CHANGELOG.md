@@ -1,9 +1,5 @@
 # Changelog
 
-This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
-
-### [0.3.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.3.0...ng-nest@0.3.1) (2022-08-09)
-
 
 ### Bug Fixes
 
