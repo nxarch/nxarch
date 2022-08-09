@@ -34,5 +34,13 @@ export async function updateServerConfig(tree: Tree, options: InitGeneratorSchem
     },
   };
 
+  appServerProjectConfig.targets['serve'] = {
+    ...appServerProjectConfig.targets['serve'],
+    configurations: {
+      development: {},
+      ...appServerProjectConfig.targets['serve'].configurations,
+    },
+  };
+
   updateProjectConfiguration(tree, options.serverApp, appServerProjectConfig);
 }
