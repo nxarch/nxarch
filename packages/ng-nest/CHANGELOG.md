@@ -1,8 +1,14 @@
 # Changelog
 
+This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
+
+### [0.3.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.3.0...ng-nest@0.3.1) (2022-08-09)
+
 
 ### Bug Fixes
 
+* **ng-nest:** trigger release ([9caf0f8](https://github.com/nxarch/nxarch/commit/9caf0f807ca5b16503bd4c9487bd883dc533980f))
+* **ng-nest:** trigger release ([971c1b6](https://github.com/nxarch/nxarch/commit/971c1b6244cd9d43b8950c8c33c6291b6726dd9c))
 * **nguniversal:** fix start script ([545ec0a](https://github.com/nxarch/nxarch/commit/545ec0aa5823aa8470bd1dac5e412d4b9db2e3b0))
 
 ## [0.3.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.2.3...ng-nest@0.3.0) (2022-07-31)
