@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.3.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.2.2...nguniversal@0.3.0) (2022-08-26)
+
+
+### Features
+
+* **general:** update workspace ([afd7cb6](https://github.com/nxarch/nxarch/commit/afd7cb67c2eee00c041d734c5a74f9119085e1ea))
+
 ### [0.2.2](https://github.com/nxarch/nxarch/compare/nguniversal@0.2.1...nguniversal@0.2.2) (2022-08-09)
 
 ### [0.2.1](https://github.com/nxarch/nxarch/compare/nguniversal@0.2.0...nguniversal@0.2.1) (2022-08-03)
