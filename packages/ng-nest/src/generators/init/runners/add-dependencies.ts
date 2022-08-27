@@ -14,6 +14,8 @@ export function addDependencies(tree: Tree) {
       'class-transformer': '^0.4.0',
       'class-validator': '^0.13.1',
     },
-    {}
+    {
+      '@angular-devkit/core': '^14.2.1',
+    }
   );
 }
