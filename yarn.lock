@@ -2201,13 +2201,14 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@jscutlery/semver@^2.25.2":
-  version "2.25.2"
-  resolved "https://registry.yarnpkg.com/@jscutlery/semver/-/semver-2.25.2.tgz#e3c93a4a66f3149e20554c7909d799327b3fdc75"
-  integrity sha512-F5vpPHDN20e4kQxoalia+SnUk0xX/GZ798WAv6vxVFqV5Zw0RABUqnGQfDVSv9lbjm//eBeUvQmBd9f3A6y32g==
+"@jscutlery/semver@2.27.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/@jscutlery/semver/-/semver-2.27.0.tgz#1dee20e708f613892d70a649933dd8130b393d2e"
+  integrity sha512-PvYbtShImCsHG7tyyg1yeTyTbjHJemeYr+ivQZLpkkaPj/3BJe7p7TD40LvUkQFMhzDpR2FMUQ0q8MlwPbV/ZQ==
   dependencies:
+    detect-indent "6.1.0"
     inquirer "8.2.4"
-    rxjs "7.5.5"
+    rxjs "7.5.6"
     standard-version "9.5.0"
 
 "@leichtgewicht/ip-codec@^2.0.1":
@@ -5542,7 +5543,7 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha512-3NdhDuEXnfun/z7x9GOElY49LoqVHoGScmOKwmxhsS8N5Y+Z8KyPPDnaSzqWgYt/ji4mqwfTS34Htrk0zPIXVg==
 
-detect-indent@^6.0.0:
+detect-indent@6.1.0, detect-indent@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.1.0.tgz#592485ebbbf6b3b1ab2be175c8393d04ca0d57e6"
   integrity sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==
@@ -11135,13 +11136,6 @@ rxjs@6.6.7, rxjs@^6.5.4, rxjs@^6.5.5:
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
   dependencies:
     tslib "^1.9.0"
-
-rxjs@7.5.5:
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.5.tgz#2ebad89af0f560f460ad5cc4213219e1f7dd4e9f"
-  integrity sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==
-  dependencies:
-    tslib "^2.1.0"
 
 rxjs@7.5.6, rxjs@^7.5.4, rxjs@^7.5.5:
   version "7.5.6"
