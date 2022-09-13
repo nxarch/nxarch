@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.5.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.4.1...ng-nest@0.5.0) (2022-09-13)
+
+
+### Bug Fixes
+
+* **nguniversal:** fix trigger reload function ([6846968](https://github.com/nxarch/nxarch/commit/684696886b8b1ed888f20edd5a803eebdfbbd854))
+
 ### [0.4.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.4.0...ng-nest@0.4.1) (2022-08-27)
 
 
