@@ -2,7 +2,8 @@ import { getAvailablePort } from '@nguniversal/builders/src/ssr-dev-server/utils
 import { ExecutorContext } from '@nrwl/devkit';
 import { BSOptions, NodeNgSsrExecutorOptions } from './schema';
 import { serveTarget } from './serve';
-import { getExecutorPromises, removeDir, startExecutors } from './utilities/utils';
+import { removeDir } from './utilities/node.utils';
+import { getExecutorPromises, startExecutors } from './utilities/utils';
 
 const BS_DEFAULT_OPTIONS: BSOptions = {
   port: 4200,
