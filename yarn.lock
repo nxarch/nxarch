@@ -15,20 +15,12 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@angular-devkit/architect@0.1402.2":
+"@angular-devkit/architect@0.1402.2", "@angular-devkit/architect@^0.1402.0":
   version "0.1402.2"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1402.2.tgz#174cd1c86d5c9493192dfa9c0c52b9191a728b2b"
   integrity sha512-ICcK7OKViMhLkj4btnH/8nv0wjxuKchT/LDN6jfb9gUYUuoon190q0/L/U6ORDwvmjD6sUTurStzOxjuiS0KIg==
   dependencies:
     "@angular-devkit/core" "14.2.2"
-    rxjs "6.6.7"
-
-"@angular-devkit/architect@^0.1400.0-next":
-  version "0.1400.7"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1400.7.tgz#bf3570cddeb5e8450c9c4f589286638bc00c01c3"
-  integrity sha512-8dv/Ql86dHajsHYjjr5jvpiV7uXWbt7Mz4K/rGiOi+zzDNKPcZcuCejulWhOySDcCPjT/an47Qcwr+awL4Wr4g==
-  dependencies:
-    "@angular-devkit/core" "14.0.7"
     rxjs "6.6.7"
 
 "@angular-devkit/build-angular@14.2.2":
@@ -109,32 +101,10 @@
     "@angular-devkit/architect" "0.1402.2"
     rxjs "6.6.7"
 
-"@angular-devkit/core@14.0.7":
-  version "14.0.7"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-14.0.7.tgz#1ff48d9623c56cfa9cdbbb60a0144adc2a26a4e7"
-  integrity sha512-XBqK2OMVKkV1Ltkh4aBsoHoDJQlins5a6qa/ZMjW4reYx90qLERs8ZfeWlRUWhvn2/ohx4aPq77jwSR5avp/Cw==
-  dependencies:
-    ajv "8.11.0"
-    ajv-formats "2.1.1"
-    jsonc-parser "3.0.0"
-    rxjs "6.6.7"
-    source-map "0.7.3"
-
-"@angular-devkit/core@14.2.2":
+"@angular-devkit/core@14.2.2", "@angular-devkit/core@^14.2.0":
   version "14.2.2"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-14.2.2.tgz#d616ada7c9a0610454da47445e64520a0b34e400"
   integrity sha512-ofDhTmJqoAkmkJP0duwUaCxDBMxPlc+AWYwgs3rKKZeJBb0d+tchEXHXevD5bYbbRfXtnwM+Vye2XYHhA4nWAA==
-  dependencies:
-    ajv "8.11.0"
-    ajv-formats "2.1.1"
-    jsonc-parser "3.1.0"
-    rxjs "6.6.7"
-    source-map "0.7.4"
-
-"@angular-devkit/core@^14.0.0-next":
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-14.1.0.tgz#e3f6f0b8e8b6780229e582eb730b8662938b4c85"
-  integrity sha512-Y2d/+nFmjjY4eatc3cwdDDAnpnhG3KTX2OVW7dXSUxW3eY5e3vdMlVUbFiKwvwAshlrJy85Y6RMvZSBN4VrpnA==
   dependencies:
     ajv "8.11.0"
     ajv-formats "2.1.1"
@@ -2231,14 +2201,14 @@
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-14.2.2.tgz#f001cc7373e88c3540cfb069713ed48f889d1bc0"
   integrity sha512-mjHv5DPsK6QP/D4zi6Oc4gMEZGNYv6Hmw/xJ1ZZTjSxgKujmHx2keDLSJHZpoLtbHRr+FHfWNnPfPz9dWYrlYQ==
 
-"@nguniversal/builders@^14.0.3":
-  version "14.0.3"
-  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-14.0.3.tgz#7df2cff48c8c16d440565fe8522a94d75f81d9a4"
-  integrity sha512-LPpFTGR2eX6HoPtiB9sJJmO03xZDZAdB0JLVMy63XYbCKp3sqX4A0huQj16qIkhkf/D/Q9CdJsYMWM6L7VmYnQ==
+"@nguniversal/builders@14.2.0":
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/builders/-/builders-14.2.0.tgz#8b0303fd615a0383304a1a6b437c6587116dd224"
+  integrity sha512-7rElvsL1OdLtYmn1zNwijga21KhDtjkhuM2o2Mwqafiud3a4zfxzmdv/hOAvFapVTlpUYgb+m4pBwq7V4DYiUA==
   dependencies:
-    "@angular-devkit/architect" "^0.1400.0-next"
-    "@angular-devkit/core" "^14.0.0-next"
-    "@nguniversal/common" "14.0.3"
+    "@angular-devkit/architect" "^0.1402.0"
+    "@angular-devkit/core" "^14.2.0"
+    "@nguniversal/common" "14.2.0"
     browser-sync "^2.26.7"
     express "^4.17.1"
     guess-parser "^0.4.12"
@@ -2247,15 +2217,6 @@
     piscina "~3.2.0"
     rxjs "^6.5.5"
     tree-kill "^1.2.2"
-
-"@nguniversal/common@14.0.3":
-  version "14.0.3"
-  resolved "https://registry.yarnpkg.com/@nguniversal/common/-/common-14.0.3.tgz#f1c24883dcc0703f68c6a71157bd0438ed37829f"
-  integrity sha512-WwC1pseVxTl0RT2UHpTwpvGnm0Ep0OF7Q1/lMvp6g1t4Jt9CgR/Sqd5sCl+riqwK817+kx3DM3vdvKvMvEK+hA==
-  dependencies:
-    critters "0.0.16"
-    jsdom "19.0.0"
-    tslib "^2.3.0"
 
 "@nguniversal/common@14.2.0":
   version "14.2.0"
@@ -8447,39 +8408,6 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-jsdom@19.0.0, jsdom@^19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-19.0.0.tgz#93e67c149fe26816d38a849ea30ac93677e16b6a"
-  integrity sha512-RYAyjCbxy/vri/CfnjUWJQQtZ3LKlLnDqj+9XLNnJPgEGeirZs3hllKR20re8LUZ6o1b1X4Jat+Qd26zmP41+A==
-  dependencies:
-    abab "^2.0.5"
-    acorn "^8.5.0"
-    acorn-globals "^6.0.0"
-    cssom "^0.5.0"
-    cssstyle "^2.3.0"
-    data-urls "^3.0.1"
-    decimal.js "^10.3.1"
-    domexception "^4.0.0"
-    escodegen "^2.0.0"
-    form-data "^4.0.0"
-    html-encoding-sniffer "^3.0.0"
-    http-proxy-agent "^5.0.0"
-    https-proxy-agent "^5.0.0"
-    is-potential-custom-element-name "^1.0.1"
-    nwsapi "^2.2.0"
-    parse5 "6.0.1"
-    saxes "^5.0.1"
-    symbol-tree "^3.2.4"
-    tough-cookie "^4.0.0"
-    w3c-hr-time "^1.0.2"
-    w3c-xmlserializer "^3.0.0"
-    webidl-conversions "^7.0.0"
-    whatwg-encoding "^2.0.0"
-    whatwg-mimetype "^3.0.0"
-    whatwg-url "^10.0.0"
-    ws "^8.2.3"
-    xml-name-validator "^4.0.0"
-
 jsdom@20.0.0:
   version "20.0.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-20.0.0.tgz#882825ac9cc5e5bbee704ba16143e1fa78361ebf"
@@ -8545,6 +8473,39 @@ jsdom@^16.4.0:
     whatwg-url "^8.5.0"
     ws "^7.4.6"
     xml-name-validator "^3.0.0"
+
+jsdom@^19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-19.0.0.tgz#93e67c149fe26816d38a849ea30ac93677e16b6a"
+  integrity sha512-RYAyjCbxy/vri/CfnjUWJQQtZ3LKlLnDqj+9XLNnJPgEGeirZs3hllKR20re8LUZ6o1b1X4Jat+Qd26zmP41+A==
+  dependencies:
+    abab "^2.0.5"
+    acorn "^8.5.0"
+    acorn-globals "^6.0.0"
+    cssom "^0.5.0"
+    cssstyle "^2.3.0"
+    data-urls "^3.0.1"
+    decimal.js "^10.3.1"
+    domexception "^4.0.0"
+    escodegen "^2.0.0"
+    form-data "^4.0.0"
+    html-encoding-sniffer "^3.0.0"
+    http-proxy-agent "^5.0.0"
+    https-proxy-agent "^5.0.0"
+    is-potential-custom-element-name "^1.0.1"
+    nwsapi "^2.2.0"
+    parse5 "6.0.1"
+    saxes "^5.0.1"
+    symbol-tree "^3.2.4"
+    tough-cookie "^4.0.0"
+    w3c-hr-time "^1.0.2"
+    w3c-xmlserializer "^3.0.0"
+    webidl-conversions "^7.0.0"
+    whatwg-encoding "^2.0.0"
+    whatwg-mimetype "^3.0.0"
+    whatwg-url "^10.0.0"
+    ws "^8.2.3"
+    xml-name-validator "^4.0.0"
 
 jsesc@^2.5.1:
   version "2.5.2"
