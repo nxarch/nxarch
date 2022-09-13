@@ -2419,17 +2419,6 @@
     webpack "^4 || ^5"
     webpack-node-externals "^3.0.0"
 
-"@nrwl/devkit@14.4.3":
-  version "14.4.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-14.4.3.tgz#4f8ed59bc1e0188e2fe6e4b59b03f783ddca33a0"
-  integrity sha512-CFGWQyzrqs4q7YUk37E5Ca+HDj9qbhfw6oI/Omf42MitEpoEnWxVKy/h1pua6ykHn8ZDVvS7sp6nrmg+r6OmDA==
-  dependencies:
-    ejs "^3.1.7"
-    ignore "^5.0.4"
-    rxjs "^6.5.4"
-    semver "7.3.4"
-    tslib "^2.3.0"
-
 "@nrwl/devkit@14.7.5":
   version "14.7.5"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-14.7.5.tgz#18e476b2050ca00fe8fcb34f2d988e94dc2b9d4b"
@@ -9375,12 +9364,12 @@ ng-packagr@14.2.1:
   optionalDependencies:
     esbuild "^0.15.0"
 
-ngx-deploy-npm@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/ngx-deploy-npm/-/ngx-deploy-npm-4.1.2.tgz#00d3ff75a20b3d6efc6bbe39fef6d382b9ca3f29"
-  integrity sha512-kfVsD8nC0CLEHGNyVvlbnlhibX17YGxhCRKB21ODiwAXVoipTMjPmbkBWo/JKfrDw4mu5n1YdSleQ+hSwZLyCg==
+ngx-deploy-npm@4.2.4:
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/ngx-deploy-npm/-/ngx-deploy-npm-4.2.4.tgz#4e7e36deb33d734b16f2de5b8f4d28283f498e57"
+  integrity sha512-F5IDbZItmUQzz1Y3MNf0dQZ8nvwWBmk2BYV2/JE6JIzutMlqbbR1yDEjTnNUKOT01T6qXdNz/CTL5E6C8AjKaA==
   dependencies:
-    "@nrwl/devkit" "14.4.3"
+    "@nrwl/devkit" "14.7.5"
 
 nice-napi@^1.0.2:
   version "1.0.2"
