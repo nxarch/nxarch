@@ -36,6 +36,9 @@ provided callback function should be executed based on the existence of the key.
 
 ### Setup
 
+This setup is not required for Angular 14.<br>
+You can just [use](#usage) the service in your dependency injection.
+
 ```ts
 // browser.module.ts
 @NgModule({
