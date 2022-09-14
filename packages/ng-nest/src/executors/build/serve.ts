@@ -19,28 +19,28 @@ export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
   serverTargetOptions = getTargetOptions(serveTargetOptions.buildTarget, context);
 
   watchPaths.push(browserTargetOptions.outputPath, ssrTargetOptions.outputPath, serverTargetOptions.outputPath);
+
+  process.env.NXARCH_SERVER_AUTO_SYNC = 'true';
   watchFiles.push(
     browserTargetOptions.outputPath + '/main.js',
     browserTargetOptions.outputPath + '/styles.css',
-    ssrTargetOptions.outputPath + '/main.js',
-    serverTargetOptions.outputPath + '/main.js'
+    ssrTargetOptions.outputPath + '/main.js'
   );
+
+  if (!options.serverAutoSync) {
+    process.env.NXARCH_SERVER_AUTO_SYNC = 'false';
+  } else {
+    // triggerReload() is used instead of watching server main.js bundle to avoid early refresh before server is restarted
+    // trigger reload is called in @nxarch/nest-nguniversal
+    process.env.BS_TRIGGER_FILE = serverTargetOptions.outputPath + '/.bs-sync-trigger';
+    watchFiles.push(process.env.BS_TRIGGER_FILE);
+  }
 
   waitOn({ resources: watchPaths }).then(() => startBrowserSync(watchPaths, watchFiles, options));
 }
 
 async function startBrowserSync(watchPaths: string[], watchFiles: string[], options: BSOptions) {
   const bsInstance = browserSync.create();
-
-  if (!options.serverAutoSync) {
-    process.env.BS_TRIGGER_FILE = serverTargetOptions.outputPath + '/.bs-sync-trigger';
-    watchFiles = [
-      browserTargetOptions.outputPath + '/main.js',
-      browserTargetOptions.outputPath + '/styles.css',
-      ssrTargetOptions.outputPath + '/main.js',
-      process.env.BS_TRIGGER_FILE,
-    ];
-  }
 
   chokidar.watch(watchPaths).on('all', (event, path, stats) => {
     if (watchFiles.includes(path)) {
@@ -52,6 +52,7 @@ async function startBrowserSync(watchPaths: string[], watchFiles: string[], opti
       bsInstance.reload();
     }
   });
+
   await initBrowserSync(bsInstance, +process.env.PORT, options);
 }
 
