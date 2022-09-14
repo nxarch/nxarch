@@ -48,7 +48,7 @@
     },
     "serverAutoSync": {
       "type": "boolean",
-      "description": "If the server app takes too long to bootstrap disable auto sync and trigger reload manually."
+      "description": "Disable auto sync if you want to deal with triggering browsersync refresh yourself. This setting will only affect changes in the server app. Use triggerReload() function to trigger browsersync refresh."
     },
     "disableBrowserSync": {
       "type": "boolean",

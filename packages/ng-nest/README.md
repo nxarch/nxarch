@@ -65,6 +65,25 @@ yarn nx generate @nrwl/nest:app
 
 ### Configuration
 
+You can configure the plugin with these properties. <br>
+Use them in server projects project.json: `targets -> serve-ssr -> options`
+
+| Property             | Type      | Description                                                                                                                                                                            |
+|----------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `browserTarget`      | string    | The target name of your browser target (already configured after setup)                                                                                                                |
+| `ssrTarget`          | string    | The target name of your ssr target (already configured after setup)                                                                                                                    |
+| `serveTarget`        | string    | The target name of your server target (already configured after setup)                                                                                                                 |
+| `host`               | string?   | Browsersync host (default: localhost)                                                                                                                                                  |
+| `port`               | number?   | The browsersync port (default: 4200)                                                                                                                                                   |
+| `ssl`                | boolean?  | Enable ssl on browsersync (default: false)                                                                                                                                             |
+| `sslKey`             | string?   | SSL key to use if ssl is enabled                                                                                                                                                       |
+| `sslCert`            | string?   | SSL cert to use if ssl is enabled                                                                                                                                                      |
+| `proxyConfig`        | string?   | A possible proxy config for browsersync                                                                                                                                                |
+| `openBrowser`        | boolean?  | Enable if a browser window should open on app startup (default: true)                                                                                                                  |
+| `browsers`           | string[]? | Specify which browsers to open on app startup (default is your default system browser) (e.g. ["Google Chrome"])                                                                        |
+| `serverAutoSync`     | boolean?  | You can disable server auto sync if you want to take care of reloading browsersync after server changes. User triggerReload() function to trigger browsersync reloads. (default: true) |
+| `disableBrowserSync` | boolean?  | Disable browsersync entirely (default: false)                                                                                                                                          |
+
 For configuring the AngularUniversalModule refer
 to [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
 
