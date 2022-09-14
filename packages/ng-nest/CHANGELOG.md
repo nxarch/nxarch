@@ -2,6 +2,18 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.4.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.4.1...ng-nest@0.4.2) (2022-09-14)
+
+
+### Features
+
+* **nguniversal:** add server reload based on stdout logging ([c7b34bf](https://github.com/nxarch/nxarch/commit/c7b34bfe595b5de2ffb6af0472e54e87a8e207c7))
+
+
+### Bug Fixes
+
+* **nguniversal:** fix trigger reload function ([6846968](https://github.com/nxarch/nxarch/commit/684696886b8b1ed888f20edd5a803eebdfbbd854))
+
 ### [0.4.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.4.0...ng-nest@0.4.1) (2022-08-27)
 
 
