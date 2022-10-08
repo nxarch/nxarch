@@ -1,5 +1,7 @@
-import { installPackagesTask, Tree } from '@nrwl/devkit';
+import { installPackagesTask, Tree, workspaceRoot } from '@nrwl/devkit';
+import { removeDir } from '../../executors/build/utilities/node.utils';
 import { addDependencies } from './runners/add-dependencies';
+import { maybeAddWorkspaceJson } from './runners/maybe-add-workspace-json';
 import { renameFiles } from './runners/rename-files';
 import { runUniversalSchematic } from './runners/run-universal-schematic';
 import { updateAppBrowserModule } from './runners/update-app-browser-module';
@@ -13,26 +15,24 @@ import { updateSsrMain } from './runners/update-ssr-main';
 import { InitGeneratorSchema } from './schema';
 
 export default async function (tree: Tree, options: InitGeneratorSchema) {
+  const addedWorkspaceJson = maybeAddWorkspaceJson(tree, options);
+
   await runUniversalSchematic(tree, options);
-  await updateNgConfig(tree, options);
-  await updateServerConfig(tree, options);
-  await addDependencies(tree);
-  await updatePackageJson(tree, options);
+  updateNgConfig(tree, options);
+  updateServerConfig(tree, options);
+  addDependencies(tree);
+  updatePackageJson(tree, options);
 
   return async () => {
     installPackagesTask(tree);
 
-    await new Promise((resolve, reject) => {
-      setTimeout(async () => {
-        await updateAppServerModule(tree, options);
-        await updateAppBrowserModule(tree, options);
-        await updateAppSsrModule(tree, options);
-        await updateBrowserMain(tree, options);
-        await updateSsrMain(tree, options);
-        renameFiles(tree, options);
+    updateAppServerModule(tree, options);
+    updateAppBrowserModule(tree, options);
+    updateAppSsrModule(tree, options);
+    updateBrowserMain(tree, options);
+    updateSsrMain(tree, options);
+    renameFiles(tree, options);
 
-        resolve(true);
-      }, 100);
-    });
+    if (addedWorkspaceJson) removeDir(workspaceRoot + '/workspace.json');
   };
 }

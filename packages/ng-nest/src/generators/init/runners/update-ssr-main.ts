@@ -4,7 +4,7 @@ import { join } from 'path';
 import { IndentationText, Project } from 'ts-morph';
 import { InitGeneratorSchema } from '../schema';
 
-export async function updateSsrMain(tree: Tree, options: InitGeneratorSchema) {
+export function updateSsrMain(tree: Tree, options: InitGeneratorSchema) {
   const ngConfig = getProjects(tree).get(options.ssrApp);
 
   const ngRootDir = join(tree.root, ngConfig.root);
@@ -20,6 +20,6 @@ export async function updateSsrMain(tree: Tree, options: InitGeneratorSchema) {
   const faultyExport = main.getExportDeclaration('@angular/platform-server');
   faultyExport.replaceWithText("export { ngExpressEngine } from '@nguniversal/express-engine';");
 
-  await main.save();
-  await project.save();
+  main.saveSync();
+  project.saveSync();
 }

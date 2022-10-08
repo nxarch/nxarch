@@ -4,11 +4,12 @@ import { join } from 'path';
 import { IndentationText, Project, SyntaxKind, ts } from 'ts-morph';
 import { InitGeneratorSchema } from '../schema';
 
-export async function updateAppServerModule(tree: Tree, options: InitGeneratorSchema) {
+export function updateAppServerModule(tree: Tree, options: InitGeneratorSchema) {
   const serverConfig = getProjects(tree).get(options.serverApp);
   const ssrConfig = getProjects(tree).get(options.ssrApp);
 
   const serverRootDir = join(tree.root, serverConfig.root);
+
   const project = new Project({
     tsConfigFilePath: join(serverRootDir, 'tsconfig.app.json'),
     manipulationSettings: {
@@ -51,6 +52,6 @@ export async function updateAppServerModule(tree: Tree, options: InitGeneratorSc
   });
 
   appModule.formatText();
-  await appModule.save();
-  await project.save();
+  appModule.saveSync();
+  project.saveSync();
 }

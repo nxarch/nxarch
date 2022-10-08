@@ -1,7 +1,7 @@
 import { readProjectConfiguration, Tree, updateProjectConfiguration } from '@nrwl/devkit';
 import { InitGeneratorSchema } from '../schema';
 
-export async function updateNgConfig(tree: Tree, options: InitGeneratorSchema) {
+export function updateNgConfig(tree: Tree, options: InitGeneratorSchema) {
   const appSsrProjectConfig = readProjectConfiguration(tree, options.ssrApp);
   const { server: ssrConfig, ...targets } = appSsrProjectConfig.targets;
   ssrConfig.options.tsConfig = ssrConfig.options.tsConfig.replace('tsconfig.server.json', 'tsconfig.ssr.json');

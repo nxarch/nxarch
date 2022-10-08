@@ -4,7 +4,7 @@ import { join } from 'path';
 import { IndentationText, Project } from 'ts-morph';
 import { InitGeneratorSchema } from '../schema';
 
-export async function updateBrowserMain(tree: Tree, options: InitGeneratorSchema) {
+export function updateBrowserMain(tree: Tree, options: InitGeneratorSchema) {
   const ngConfig = getProjects(tree).get(options.ssrApp);
 
   const ngRootDir = join(tree.root, ngConfig.root);
@@ -31,6 +31,6 @@ export async function updateBrowserMain(tree: Tree, options: InitGeneratorSchema
     moduleSpecifier: './app/app.browser.module',
   });
 
-  await main.save();
-  await project.save();
+  main.saveSync();
+  project.saveSync();
 }

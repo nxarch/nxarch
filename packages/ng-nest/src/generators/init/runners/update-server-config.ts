@@ -1,7 +1,7 @@
 import { readProjectConfiguration, Tree, updateProjectConfiguration } from '@nrwl/devkit';
 import { InitGeneratorSchema } from '../schema';
 
-export async function updateServerConfig(tree: Tree, options: InitGeneratorSchema) {
+export function updateServerConfig(tree: Tree, options: InitGeneratorSchema) {
   const appServerProjectConfig = readProjectConfiguration(tree, options.serverApp);
 
   const buildConfig = appServerProjectConfig.targets['build'];

@@ -4,7 +4,7 @@ import { join } from 'path';
 import { IndentationText, Project, SyntaxKind, ts } from 'ts-morph';
 import { InitGeneratorSchema } from '../schema';
 
-export async function updateAppSsrModule(tree: Tree, options: InitGeneratorSchema) {
+export function updateAppSsrModule(tree: Tree, options: InitGeneratorSchema) {
   const ssrConfig = getProjects(tree).get(options.ssrApp);
 
   const browserRootDir = join(tree.root, ssrConfig.root);
@@ -45,6 +45,6 @@ export async function updateAppSsrModule(tree: Tree, options: InitGeneratorSchem
   });
 
   appSsrModule.formatText();
-  await appSsrModule.save();
-  await project.save();
+  appSsrModule.saveSync();
+  project.saveSync();
 }

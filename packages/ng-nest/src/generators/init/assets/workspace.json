@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "__SERVER_PROJECT__": "__SERVER_PROJECT_PATH__",
+    "__SSR_PROJECT__": "__SSR_PROJECT_PATH__"
+  }
+}

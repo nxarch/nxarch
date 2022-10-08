@@ -20,7 +20,6 @@ export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
 
   watchPaths.push(browserTargetOptions.outputPath, ssrTargetOptions.outputPath, serverTargetOptions.outputPath);
 
-  process.env.NXARCH_SERVER_AUTO_SYNC = 'true';
   watchFiles.push(
     browserTargetOptions.outputPath + '/main.js',
     browserTargetOptions.outputPath + '/styles.css',
@@ -30,6 +29,7 @@ export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
   if (!options.serverAutoSync) {
     process.env.NXARCH_SERVER_AUTO_SYNC = 'false';
   } else {
+    process.env.NXARCH_SERVER_AUTO_SYNC = 'true';
     // triggerReload() is used instead of watching server main.js bundle to avoid early refresh before server is restarted
     // trigger reload is called in @nxarch/nest-nguniversal
     process.env.BS_TRIGGER_FILE = serverTargetOptions.outputPath + '/.bs-sync-trigger';
