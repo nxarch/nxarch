@@ -15,6 +15,7 @@ import { updateSsrMain } from './runners/update-ssr-main';
 import { InitGeneratorSchema } from './schema';
 
 export default async function (tree: Tree, options: InitGeneratorSchema) {
+  // todo find a way to not use temp workspace json
   const addedWorkspaceJson = maybeAddWorkspaceJson(tree, options);
 
   await runUniversalSchematic(tree, options);
