@@ -24,8 +24,8 @@ an executor for a good DX.
 
 ## Prerequisites
 
-You need a NestJS application and an Angular application in the same [workspace](#setup-nx-apps-if-not-already-setup).
-Nx Version >= 14.0.0
+- You need a NestJS application and an Angular application in the same [workspace](#setup-nx-apps-if-not-already-setup).
+- Nx Version >= 14.0.0
 
 ## Installation
 
@@ -55,7 +55,13 @@ yarn dev:server
 
 ### Setup Nx apps (if not already setup)
 
-Setup an Angular app and a NestJS app in an existing Nx workspace.
+Use this command to quickly scaffold a **new workspace** with an Angular and a NestJS application.
+
+```
+npx create-nx-workspace --preset angular-nest
+```
+
+Setup an Angular app and a NestJS app in an **existing** Nx workspace.
 
 ```
 yarn add --dev @nrwl/angular @nrwl/nest

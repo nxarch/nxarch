@@ -2,6 +2,20 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.8.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.7.0...ng-nest@0.8.0) (2022-10-18)
+
+
+### Features
+
+* **ng-nest:** update nest-nguniversal ([d97d4cf](https://github.com/nxarch/nxarch/commit/d97d4cfe4aef6ef605e54a7d271fe2b7e9c8bdd0))
+
+## [0.7.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.6.0...ng-nest@0.7.0) (2022-10-08)
+
+
+### Features
+
+* **ng-nest:** update to fit nx version 14.8 ([c1ff87a](https://github.com/nxarch/nxarch/commit/c1ff87af658bfa5f8cc996f494619313a884f4f0))
+
 ## [0.6.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.5.0...ng-nest@0.6.0) (2022-09-14)
 
 ## [0.5.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.4.2...ng-nest@0.5.0) (2022-09-14)
