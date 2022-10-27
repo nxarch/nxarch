@@ -95,7 +95,8 @@ to [`@nxarch/nest-nguniversal`](https://github.com/nxarch/nest-nguniversal).
 
 ### Notice
 
-When using Angulars http client make sure to set a proper url.
+When using Angulars http client make sure to set an absolute url.
+Or use an Interceptor to prepend a base path on the server side.
 
 ```ts
 // don't
