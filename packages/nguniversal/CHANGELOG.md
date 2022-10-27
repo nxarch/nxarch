@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.4.1](https://github.com/nxarch/nxarch/compare/nguniversal@0.4.0...nguniversal@0.4.1) (2022-10-08)
+
 ## [0.4.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.3.0...nguniversal@0.4.0) (2022-09-12)
 
 ## [0.3.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.2.2...nguniversal@0.3.0) (2022-08-26)
