@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.10.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.10.0...ng-nest@0.10.1) (2022-11-12)
+
+
+### Bug Fixes
+
+* **ng-nest:** fix optional property access ([214b344](https://github.com/nxarch/nxarch/commit/214b3448be12c68f020795d5254f0733f91e3403))
+
 ## [0.10.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.9.0...ng-nest@0.10.0) (2022-11-12)
 
 
