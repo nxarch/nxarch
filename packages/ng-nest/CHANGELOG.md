@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.9.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.8.0...ng-nest@0.9.0) (2022-10-27)
+
 ## [0.8.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.7.0...ng-nest@0.8.0) (2022-10-18)
 
 
