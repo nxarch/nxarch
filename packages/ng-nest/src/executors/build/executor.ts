@@ -9,7 +9,7 @@ export default async function runExecutor(options: NodeNgSsrExecutorOptions, con
   removeDir('dist');
 
   if (!options.disableBrowserSync) {
-    process.env[options.environmentKey] = options.port.toString() || (await getAvailablePort()).toString();
+    process.env[options.environmentKey] = options.port?.toString() || (await getAvailablePort()).toString();
     serveTarget(options, context);
   }
 
