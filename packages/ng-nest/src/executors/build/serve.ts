@@ -3,7 +3,7 @@ import browserSync from 'browser-sync';
 import chokidar from 'chokidar';
 import waitOn from 'wait-on';
 import { initBrowserSync } from './init-browser-sync';
-import { BSOptions, NodeNgSsrExecutorOptions } from './schema';
+import { NodeNgSsrExecutorOptions } from './schema';
 
 let browserTargetOptions: Record<PropertyKey, unknown>;
 let ssrTargetOptions: Record<PropertyKey, unknown>;
@@ -39,7 +39,7 @@ export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
   waitOn({ resources: watchPaths }).then(() => startBrowserSync(watchPaths, watchFiles, options));
 }
 
-async function startBrowserSync(watchPaths: string[], watchFiles: string[], options: BSOptions) {
+async function startBrowserSync(watchPaths: string[], watchFiles: string[], options: NodeNgSsrExecutorOptions) {
   const bsInstance = browserSync.create();
 
   chokidar.watch(watchPaths).on('all', (event, path, stats) => {
@@ -53,7 +53,7 @@ async function startBrowserSync(watchPaths: string[], watchFiles: string[], opti
     }
   });
 
-  await initBrowserSync(bsInstance, +process.env.PORT, options);
+  await initBrowserSync(bsInstance, +process.env[options.environmentKey], options);
 }
 
 function getTargetOptions(targetString, context) {
