@@ -17,13 +17,29 @@
       "type": "string",
       "description": "Server target to be run. Usually the NestJS app."
     },
+    "port": {
+      "type": "number",
+      "description": "The server application port to be used. This port will be set as PORT environment variable. If not set a random free port will be used."
+    },
+    "environmentKey": {
+      "type": "string",
+      "description": "The environment variable key to be set that will be used by browser sync to proxy the server.",
+      "default": "PORT"
+    },
+    "browserSyncPort": {
+      "type": "number",
+      "description": "The browser sync port to be used.",
+      "default": 4200
+    },
     "host": {
       "type": "string",
-      "description": "Host to publish the application auto reloaded by browser sync"
+      "description": "Host to publish the application auto reloaded by browser sync",
+      "default": "localhost"
     },
     "openBrowser": {
       "type": "boolean",
-      "description": "True if a browser tab should be opened upon app startup"
+      "description": "True if a browser tab should be opened upon app startup",
+      "default": true
     },
     "ssl": {
       "type": "boolean",
@@ -48,7 +64,8 @@
     },
     "serverAutoSync": {
       "type": "boolean",
-      "description": "Disable auto sync if you want to deal with triggering browsersync refresh yourself. This setting will only affect changes in the server app. Use triggerReload() function to trigger browsersync refresh."
+      "description": "Disable auto sync if you want to deal with triggering browsersync refresh yourself. This setting will only affect changes in the server app. Use triggerReload() function to trigger browsersync refresh.",
+      "default": true
     },
     "disableBrowserSync": {
       "type": "boolean",

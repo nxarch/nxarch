@@ -2,6 +2,8 @@ export interface NodeNgSsrExecutorOptions extends BSOptions {
   browserTarget: string;
   ssrTarget: string;
   serveTarget: string;
+  port: number;
+  environmentKey: string;
 }
 
 export interface BSOptions {
@@ -10,7 +12,7 @@ export interface BSOptions {
   sslKey?: string;
   sslCert?: string;
   proxyConfig?: string;
-  port?: number;
+  browserSyncPort?: number;
   openBrowser?: boolean;
   browsers?: string[];
   serverAutoSync?: boolean;

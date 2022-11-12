@@ -12,7 +12,7 @@ export async function initBrowserSync(
 ): Promise<browserSync.BrowserSyncInstance> {
   if (browserSyncInstance.active) return browserSyncInstance;
 
-  const bsPort = options.port;
+  const bsPort = options.browserSyncPort;
   logger.info(`
   ${chalk.inverse(chalk.bold(chalk.green(' NG-NEST ')))}
   ------------------------------------------------------
