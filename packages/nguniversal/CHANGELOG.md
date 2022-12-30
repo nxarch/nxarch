@@ -9,6 +9,18 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 * **ng-nest:** update ([b4e52fa](https://github.com/nxarch/nxarch/commit/b4e52faf7042cfc7d126672ddb248b236eb1dcbe))
 
+
+### Bug Fixes
+
+* **ng-nest:** update packages ([57fa56c](https://github.com/nxarch/nxarch/commit/57fa56c501d696712a6dd5f7ae9390faaa2e1fb7))
+
+## [0.5.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.4.0...nguniversal@0.5.0) (2022-12-30)
+
+
+### Features
+
+* **ng-nest:** update ([b4e52fa](https://github.com/nxarch/nxarch/commit/b4e52faf7042cfc7d126672ddb248b236eb1dcbe))
+
 ### [0.4.1](https://github.com/nxarch/nxarch/compare/nguniversal@0.4.0...nguniversal@0.4.1) (2022-10-08)
 
 ## [0.4.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.3.0...nguniversal@0.4.0) (2022-09-12)
