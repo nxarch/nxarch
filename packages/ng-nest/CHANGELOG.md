@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.11.3](https://github.com/nxarch/nxarch/compare/ng-nest@0.11.2...ng-nest@0.11.3) (2022-12-30)
+
+
+### Bug Fixes
+
+* **ng-nest:** update to Angular 15 ([6be23f4](https://github.com/nxarch/nxarch/commit/6be23f4ee78662a3287083c80ab314098bb5a787))
+
 ## [0.11.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.11.1...ng-nest@0.11.2) (2022-12-30)
 
 
