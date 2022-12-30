@@ -14,7 +14,7 @@
 
 ## Prerequisites
 
-Angular Universal Version >= 14.0.0
+Angular Universal Version >= 15.0.0
 
 ## Installation
 
