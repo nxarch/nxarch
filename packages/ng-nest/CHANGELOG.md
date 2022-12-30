@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.10.2](https://github.com/nxarch/nxarch/compare/ng-nest@0.10.1...ng-nest@0.10.2) (2022-11-12)
+
+
+### Bug Fixes
+
+* **ng-nest:** fix environment port access ([20b75cc](https://github.com/nxarch/nxarch/commit/20b75cc87d5d0eba53663c3b5d24a03abb9ca862))
+
 ### [0.10.1](https://github.com/nxarch/nxarch/compare/ng-nest@0.10.0...ng-nest@0.10.1) (2022-11-12)
 
 
