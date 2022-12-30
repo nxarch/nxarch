@@ -17,8 +17,20 @@ export function updateSsrMain(tree: Tree, options: InitGeneratorSchema) {
 
   const main = project.getSourceFile('main.ssr.ts');
 
-  const faultyExport = main.getExportDeclaration('@angular/platform-server');
-  faultyExport.replaceWithText("export { ngExpressEngine } from '@nguniversal/express-engine';");
+  main.replaceWithText(
+    `
+// If you want prod mode to be enabled use this snippet
+// import { enableProdMode } from '@angular/core';
+// import { environment } from './environments/environment';
+//
+// if (environment.production) {
+//   enableProdMode();
+// }
+
+export { AppSsrModule } from './app/app.ssr.module';
+export { ngExpressEngine } from '@nguniversal/express-engine';
+`.trim()
+  );
 
   main.saveSync();
   project.saveSync();

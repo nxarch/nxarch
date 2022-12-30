@@ -20,6 +20,12 @@ export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
 
   watchPaths.push(browserTargetOptions.outputPath, ssrTargetOptions.outputPath, serverTargetOptions.outputPath);
 
+  watchFiles.push(
+    browserTargetOptions.outputPath + '/main.js',
+    browserTargetOptions.outputPath + '/styles.css',
+    ssrTargetOptions.outputPath + '/main.js'
+  );
+
   if (!options.serverAutoSync) {
     process.env.NXARCH_SERVER_AUTO_SYNC = 'false';
   } else {

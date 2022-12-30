@@ -12,10 +12,10 @@ export function addDependencies(tree: Tree) {
       '@nxarch/nest-nguniversal': '^0.7.4',
       'reflect-metadata': '^0.1.13',
       'class-transformer': '^0.4.0',
-      'class-validator': '^0.13.1',
+      'class-validator': '^0.14.0',
     },
     {
-      '@angular-devkit/core': '^14.2.1',
+      '@angular-devkit/core': '^15.0.4',
     }
   );
 }
