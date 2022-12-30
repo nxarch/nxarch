@@ -1,11 +1,12 @@
 {
+  "name": "nguniversal",
   "projectType": "library",
   "sourceRoot": "packages/nguniversal/src",
   "prefix": "nxarch",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",
-      "outputs": ["dist/packages/nguniversal"],
+      "outputs": ["{workspaceRoot}/dist/packages/nguniversal"],
       "options": {
         "project": "packages/nguniversal/ng-package.json"
       },
@@ -21,7 +22,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/nguniversal"],
+      "outputs": ["{workspaceRoot}/coverage/packages/nguniversal"],
       "options": {
         "jestConfig": "packages/nguniversal/jest.config.ts",
         "passWithNoTests": true

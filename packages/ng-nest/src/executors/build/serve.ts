@@ -20,12 +20,6 @@ export function serveTarget(options: NodeNgSsrExecutorOptions, context) {
 
   watchPaths.push(browserTargetOptions.outputPath, ssrTargetOptions.outputPath, serverTargetOptions.outputPath);
 
-  watchFiles.push(
-    browserTargetOptions.outputPath + '/main.js',
-    browserTargetOptions.outputPath + '/styles.css',
-    ssrTargetOptions.outputPath + '/main.js'
-  );
-
   if (!options.serverAutoSync) {
     process.env.NXARCH_SERVER_AUTO_SYNC = 'false';
   } else {
@@ -43,7 +37,7 @@ async function startBrowserSync(watchPaths: string[], watchFiles: string[], opti
   const bsInstance = browserSync.create();
 
   chokidar.watch(watchPaths).on('all', (event, path, stats) => {
-    if (watchFiles.includes(path)) {
+    if (path.endsWith('.js') || path.endsWith('.css') || path.endsWith('.html') || watchFiles.includes(path)) {
       // todo add debug flag
       // console.log('--------');
       // console.log(event);
