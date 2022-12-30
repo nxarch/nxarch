@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.11.4](https://github.com/nxarch/nxarch/compare/ng-nest@0.11.3...ng-nest@0.11.4) (2022-12-30)
+
+
+### Bug Fixes
+
+* **ng-nest:** update dependencies ([3f7a512](https://github.com/nxarch/nxarch/commit/3f7a5122e465b154672712c3d9b9fc62e2b9d32b))
+
 ## [0.11.3](https://github.com/nxarch/nxarch/compare/ng-nest@0.11.2...ng-nest@0.11.3) (2022-12-30)
 
 
