@@ -9,7 +9,7 @@ export function addDependencies(tree: Tree) {
       '@nestjs/core': '^9.0.0',
       '@nestjs/platform-express': '^9.0.0',
       '@nguniversal/express-engine': '^15.0.0',
-      '@nxarch/nest-nguniversal': '^0.7.4',
+      '@nxarch/nest-nguniversal': '^0.8.0',
       'reflect-metadata': '^0.1.13',
       'class-transformer': '^0.4.0',
       'class-validator': '^0.14.0',
