@@ -48,7 +48,7 @@
     "@angular/language-service": "15.0.4",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@jscutlery/semver": "^2.25.2",
+    "@jscutlery/semver": "^2.29.3",
     "@nguniversal/express-engine": "15.0.0",
     "@nrwl/angular": "15.4.2",
     "@nrwl/cli": "15.4.2",
