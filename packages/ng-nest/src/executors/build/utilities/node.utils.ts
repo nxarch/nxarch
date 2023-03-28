@@ -10,15 +10,11 @@ export function writeFile(path: string, content: string | number | Record<Proper
   try {
     content = JSON.stringify(content);
     return fs.writeFileSync(path, content);
-  } catch (err) {
-    // console.log(err);
-  }
+  } catch (err) {}
 }
 
 export function readFile(path: string) {
   try {
     return JSON.parse(fs.readFileSync(path, 'utf8'));
-  } catch (err) {
-    // console.log(err);
-  }
+  } catch (err) {}
 }

@@ -16,6 +16,9 @@ export class TransferStateService {
 
   constructor(@Inject(IS_SERVER) private readonly isServer: boolean, private readonly transferState: TransferState) {}
 
+  /**
+   * Get current state
+   */
   get state() {
     return this.transferState['store'];
   }
