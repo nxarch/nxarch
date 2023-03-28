@@ -52,7 +52,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
-        run: npx nx version ${{github.event.inputs.project}} --releaseAs=${{github.event.inputs.level}} --dryRun
+        run: npx nx version ${{github.event.inputs.project}} --releaseAs=${{github.event.inputs.level}} --dryRun --push=false
 
       - name: Bump new version and update changelog
         env:

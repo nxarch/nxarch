@@ -44,7 +44,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
-        run: yarn nx run-many --target=version --dryRun
+        run: yarn nx run-many --target=version --dryRun --push=false
 
       - name: Bump new version and update changelog
         env:
