@@ -64,7 +64,7 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
-        "push": true,
+        "push": false,
         "noVerify": true,
         "baseBranch": "master",
         "preset": "conventional",

@@ -53,6 +53,9 @@ jobs:
         shell: bash
         run: npx nx affected --base=origin/master --target=version
 
+      - name: Push to master
+        run: git push
+
       - name: Back-merge master -> develop
         uses: ./.github/actions/merge
         with:

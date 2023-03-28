@@ -61,6 +61,9 @@ jobs:
         shell: bash
         run: npx nx version ${{github.event.inputs.project}} --releaseAs=${{github.event.inputs.level}}
 
+      - name: Push to master
+        run: git push
+
       - name: Back-merge master -> develop
         uses: ./.github/actions/merge
         with:
