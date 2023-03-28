@@ -1,9 +1,5 @@
 # Changelog
 
-This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
-
-## [0.7.0](https://github.com/nxarch/nxarch/compare/nguniversal@0.6.0...nguniversal@0.7.0) (2023-03-28)
-
 
 ### Features
 

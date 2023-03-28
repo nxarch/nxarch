@@ -28,10 +28,6 @@ jobs:
           node-version: ${{ inputs.node_version }}
           registry-url: https://registry.npmjs.org
 
-      - name: Setup npm
-        run: |
-          npm adduser --registry https://registry.npmjs.org --always-auth --username ynnck --password ${{ secrets.NPM_TOKEN }}
-
       - name: Merge develop -> master
         uses: ./.github/actions/merge
         with:
