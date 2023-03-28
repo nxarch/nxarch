@@ -2610,17 +2610,17 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@jscutlery/semver@^2.29.3":
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/@jscutlery/semver/-/semver-2.29.3.tgz#e705ce22d74ce54872f9cd05a1298b2ce94fae78"
-  integrity sha512-Vb1K8xsZtU2iz25/QcXm0JCTmLcX91mNqRf8/6Pp5vzaO0aKztDX4hHNIRBBo/5nCh4TVJk6QWp3CeUCGdoFNQ==
+"@jscutlery/semver@^2.30.1":
+  version "2.30.1"
+  resolved "https://registry.yarnpkg.com/@jscutlery/semver/-/semver-2.30.1.tgz#daaaf223a6536a339ad98bee92c872205a5c0191"
+  integrity sha512-Adnlu/kEOaikxNJLi3Ll4UfgEW4VG0dvf5zm7Ere7vT/udHhPs6CTO6B7PCFLzKsLgM0vqSrVk/nKYFWri83Ww==
   dependencies:
     chalk "4.1.2"
     conventional-changelog "^3.1.25"
     conventional-recommended-bump "^6.1.0"
     detect-indent "6.1.0"
     inquirer "8.2.5"
-    rxjs "7.6.0"
+    rxjs "7.8.0"
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.4"
@@ -11783,10 +11783,10 @@ rxjs@7.5.6, rxjs@^7.5.4, rxjs@^7.5.5:
   dependencies:
     tslib "^2.1.0"
 
-rxjs@7.6.0:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.6.0.tgz#361da5362b6ddaa691a2de0b4f2d32028f1eb5a2"
-  integrity sha512-DDa7d8TFNUalGC9VqXvQ1euWNN7sc63TrUCuM9J998+ViviahMIjKSOU7rfcgFOF+FCD71BhDRv4hrFz+ImDLQ==
+rxjs@7.8.0, rxjs@^7.5.6:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"
+  integrity sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==
   dependencies:
     tslib "^2.1.0"
 
@@ -11796,13 +11796,6 @@ rxjs@^5.5.6:
   integrity sha512-xx2itnL5sBbqeeiVgNPVuQQ1nC8Jp2WfNJhXWHmElW9YmrpS9UVnNzhP3EH3HFqexO5Tlp8GhYY+WEcqcVMvGw==
   dependencies:
     symbol-observable "1.0.1"
-
-rxjs@^7.5.6:
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"
-  integrity sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==
-  dependencies:
-    tslib "^2.1.0"
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
