@@ -1,8 +1,13 @@
 # Changelog
 
+This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
+
+## [0.12.0](https://github.com/nxarch/nxarch/compare/ng-nest@0.11.4...ng-nest@0.12.0) (2023-03-28)
+
 
 ### Features
 
+* **ng-nest:** update dependencies ([26e2c3c](https://github.com/nxarch/nxarch/commit/26e2c3c5a29d2581e34f60cb5f2438028edd6371))
 * **ng-nest:** update dependencies ([8e1aa89](https://github.com/nxarch/nxarch/commit/8e1aa89d121b03280ba2e1e64afa5e1ea68868a2))
 
 ## [0.11.4](https://github.com/nxarch/nxarch/compare/ng-nest@0.11.3...ng-nest@0.11.4) (2022-12-30)
