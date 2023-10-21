@@ -26,18 +26,18 @@ jobs:
           node-version: ${{ inputs.node_version }}
           registry-url: https://registry.npmjs.org
 
-      - name: yarn install
+      - name: npm install
         shell: bash
-        run: yarn install --immutable --immutable-cache
+        run: npm run install --legacy-peer-deps
 
       - name: Format
-        run: yarn format
+        run: npm run format
 
       - name: Lint
-        run: yarn lint:affected
+        run: npm run lint:affected
 
       - name: Test
-        run: yarn test:affected
+        run: npm run test:affected
 
       - name: Build
-        run: yarn build:affected
+        run: npm run build:affected
