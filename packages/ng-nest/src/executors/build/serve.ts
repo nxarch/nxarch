@@ -1,4 +1,4 @@
-import { parseTargetString, readTargetOptions } from '@nrwl/devkit';
+import { parseTargetString, readTargetOptions } from '@nx/devkit';
 import browserSync from 'browser-sync';
 import chokidar from 'chokidar';
 import waitOn from 'wait-on';

@@ -1,4 +1,4 @@
-import { Tree } from '@nrwl/devkit';
+import { Tree } from '@nx/devkit';
 import { wrapAngularDevkitSchematic } from 'nx/src/adapter/ngcli-adapter';
 
 import { InitGeneratorSchema } from '../schema';

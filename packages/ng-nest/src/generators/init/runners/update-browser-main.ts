@@ -1,4 +1,4 @@
-import { Tree } from '@nrwl/devkit';
+import { Tree } from '@nx/devkit';
 import { getProjects } from 'nx/src/generators/utils/project-configuration';
 import { join } from 'path';
 import { IndentationText, Project } from 'ts-morph';

@@ -1,4 +1,4 @@
-import { ExecutorContext, parseTargetString, runExecutor } from '@nrwl/devkit';
+import { ExecutorContext, parseTargetString, runExecutor } from '@nx/devkit';
 import * as browserSync from 'browser-sync';
 import { resolve as pathResolve } from 'path';
 import { BSOptions } from '../schema';

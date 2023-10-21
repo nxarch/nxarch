@@ -1,4 +1,4 @@
-// import { checkFilesExist, ensureNxProject, readJson, runNxCommandAsync, uniq } from '@nrwl/nx-plugin/testing';
+// import { checkFilesExist, ensureNxProject, readJson, runNxCommandAsync, uniq } from '@nx/nx-plugin/testing';
 //
 // describe('ng-nest e2e', () => {
 //   // Setting up individual workspaces per

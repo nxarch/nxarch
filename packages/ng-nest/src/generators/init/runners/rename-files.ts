@@ -1,4 +1,4 @@
-import { readProjectConfiguration, Tree } from '@nrwl/devkit';
+import { readProjectConfiguration, Tree } from '@nx/devkit';
 import fs from 'fs';
 import { join } from 'path';
 import { InitGeneratorSchema } from '../schema';

@@ -1,4 +1,4 @@
-import { Tree, updateJson } from '@nrwl/devkit';
+import { Tree, updateJson } from '@nx/devkit';
 import { InitGeneratorSchema } from '../schema';
 
 export function updatePackageJson(tree: Tree, options: InitGeneratorSchema) {

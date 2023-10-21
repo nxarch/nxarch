@@ -1,5 +1,5 @@
 import { getAvailablePort } from '@nguniversal/builders/src/ssr-dev-server/utils';
-import { ExecutorContext } from '@nrwl/devkit';
+import { ExecutorContext } from '@nx/devkit';
 import { NodeNgSsrExecutorOptions } from './schema';
 import { serveTarget } from './serve';
 import { removeDir } from './utilities/node.utils';

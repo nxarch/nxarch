@@ -5,7 +5,7 @@
   "sourceRoot": "e2e/ng-nest-e2e/src",
   "targets": {
     "e2e": {
-      "executor": "@nrwl/nx-plugin:e2e",
+      "executor": "@nx/nx-plugin:e2e",
       "options": {
         "target": "ng-nest:build",
         "jestConfig": "e2e/ng-nest-e2e/jest.config.ts"

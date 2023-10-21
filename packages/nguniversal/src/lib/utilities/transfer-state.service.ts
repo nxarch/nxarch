@@ -1,5 +1,5 @@
-import { Inject, Injectable } from '@angular/core';
-import { makeStateKey, StateKey, TransferState } from '@angular/platform-browser';
+import { Inject, Injectable, makeStateKey, StateKey } from '@angular/core';
+import { TransferState } from '@angular/platform-browser';
 import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { IS_SERVER } from './platform.tokens';
@@ -19,9 +19,9 @@ export class TransferStateService {
   /**
    * Get current state
    */
-  get state() {
-    return this.transferState['store'];
-  }
+  // get state() {
+  // return this.transferState['store'];
+  // }
 
   /**
    * on fetch try to get value from store;

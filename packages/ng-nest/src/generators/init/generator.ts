@@ -1,4 +1,4 @@
-import { installPackagesTask, Tree, workspaceRoot } from '@nrwl/devkit';
+import { installPackagesTask, Tree, workspaceRoot } from '@nx/devkit';
 import { removeDir } from '../../executors/build/utilities/node.utils';
 import { addDependencies } from './runners/add-dependencies';
 import { maybeAddWorkspaceJson } from './runners/maybe-add-workspace-json';

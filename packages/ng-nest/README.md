@@ -64,9 +64,9 @@ npx create-nx-workspace --preset angular-nest
 Setup an Angular app and a NestJS app in an **existing** Nx workspace.
 
 ```
-yarn add --dev @nrwl/angular @nrwl/nest
-yarn nx generate @nrwl/angular:app
-yarn nx generate @nrwl/nest:app
+yarn add --dev @nx/angular @nx/nest
+yarn nx generate @nx/angular:app
+yarn nx generate @nx/nest:app
 ```
 
 ### Configuration

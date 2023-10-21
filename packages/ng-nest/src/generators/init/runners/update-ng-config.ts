@@ -1,4 +1,4 @@
-import { readProjectConfiguration, Tree, updateProjectConfiguration } from '@nrwl/devkit';
+import { readProjectConfiguration, Tree, updateProjectConfiguration } from '@nx/devkit';
 import { InitGeneratorSchema } from '../schema';
 
 export function updateNgConfig(tree: Tree, options: InitGeneratorSchema) {
